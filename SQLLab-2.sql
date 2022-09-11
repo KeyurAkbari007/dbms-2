@@ -1,5 +1,5 @@
 select * from employee
---1. Display all the employees whose name starts with “m” and 4 th character is “h”.
+--1. Display all the employees whose name starts with â€œmâ€ and 4 th character is â€œhâ€.
 select ename from employee
 where ename like 'm__h%'
 
@@ -12,15 +12,15 @@ select POWER(3,5)as output
 select dateadd(DAY,-20,GETDATE())
 
 
---4. Write a query to display name of employees whose name starts with “j” and contains “n” in their name.
+--4. Write a query to display name of employees whose name starts with â€œjâ€ and contains â€œnâ€ in their name.
 select ename from employee
 where ename like 'j%' and  ename like '%n%'
 
---5. Display 2nd to 9th character of the given string “SQL Programming”.
+--5. Display 2nd to 9th character of the given string â€œSQL Programmingâ€.
 select SUBSTRING('sql programming',2,9)
 
 
---6. Display name of the employees whose city name ends with “ney” &contains six characters.
+--6. Display name of the employees whose city name ends with â€œneyâ€ &contains six characters.
 select ename from employee
 where city like '___ney%'
 
@@ -36,7 +36,7 @@ alter table employee add department varchar(20)
 update employee set department ='marketing'
 where city='london'
 
---10. Display all the employees whose name ends with either “n” or “y”.
+--10. Display all the employees whose name ends with either â€œnâ€ or â€œyâ€.
 select * from employee 
 where ename like '%n' or ename like '%y'
 
@@ -80,7 +80,7 @@ where joiningdate>'01-jan-2014'
 group by city
 having sum(salary)>15000
 
---20. Write a query to replace “u” with “oo” in Ename.
+--20. Write a query to replace â€œuâ€ with â€œooâ€ in Ename.
 
 select REPLACE(ename,'u','oo') from employee
 
